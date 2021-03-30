@@ -8,5 +8,19 @@ import { Component } from '@angular/core';
 export class Tab1Page {
 
   constructor() {}
+  TempatNama : String
+  TempatNRP: String
+  TempatEmail: String
+  TempatTelp: String
+  Nama : string
+  NRP : string
+  email : string
+  telpon : string
+  btnKumpul(){
+    this.TempatNama=this.Nama
+    this.TempatNRP=this.NRP
+    this.TempatEmail=this.email
+    this.TempatTelp=this.telpon
+  }
 
 }

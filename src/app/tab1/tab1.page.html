@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Profil Saya
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,19 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div id ="container">
+    Masukkan nama : <input type ="text" [(ngModel)]="Nama"/><br/>
+    Masukkan nrp : <input type="text" [(ngModel)]="NRP"/><br/>
+    Masukkan email: <input type="text" [(ngModel)]="email"/><br/>
+    Masukkan no telpon: <input type="text" [(ngModel)]="telpon"/><br/>
+    <ion-button (click)="btnKumpul()">Submit</ion-button>
+    <br/>
+    <br/>
+    Data Pribadi Anda: <br/>
+    Nama : {{TempatNama}} <br/>
+    NRP : {{TempatNRP}} <br/>
+    E-mail: {{TempatEmail}} <br/>
+    No Telpon: {{TempatTelp}}
+  </div>
+
 </ion-content>
